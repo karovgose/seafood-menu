@@ -1,4 +1,4 @@
-function Pizza({ name, photoName, ingredients, price, soldOut }) {
+function SeaFood({ name, photoName, ingredients, price, soldOut }) {
   return (
     <li className={`sea-food ${soldOut ? "sold-out" : ""}`}>
       <img src={photoName} alt={name} />
@@ -10,4 +10,4 @@ function Pizza({ name, photoName, ingredients, price, soldOut }) {
     </li>
   );
 }
-export default Pizza;
+export default SeaFood;
