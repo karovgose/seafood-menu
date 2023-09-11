@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  background: linear-gradient(to bottom, #f0f8ff, #cfe6e7);
+  color: #2e3e4e;
+  min-height: 100vh;
+  padding: 3.2rem;
+  padding-bottom: 6rem;
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+/* Header Styling */
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.header h1 {
+  color: #007acc;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 5.2rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+/* Menu Styling */
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.menu h2 {
+  margin: 0;
+  padding: 0.5rem 0;
+  border-top: 2px solid #007acc;
+  border-bottom: 2px solid #007acc;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 500;
+  color: #2e3e4e;
+}
+
+.menu > p {
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 1.6;
+  width: 80%;
+  color: #4e6374;
+}
+
+/* Pizza Styling */
+.sea-foods {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.sea-food {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sea-food:hover {
+  transform: scale(1.05);
+}
+
+.sea-food img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.sea-food h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 1rem 0;
+  color: #2e3e4e;
+}
+
+.sea-food p {
+  font-size: 1.4rem;
+  font-style: italic;
+  margin: 0.5rem 0;
+  color: #4e6374;
+}
+.sea-food span {
+  font-size: 1.6rem;
+  color: #007acc;
+}
+
+.sea-food.sold-out {
+  opacity: 0.6;
+}
+
+/* Footer Styling */
+.footer {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+/* Medium screen (e.g., tablets) */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  .container {
+    padding: 2rem;
+  }
+
+  .sea-foods {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Small screen (e.g., mobile devices) */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  .container {
+    padding: 1rem;
+  }
+  .sea-foods {
+    grid-template-columns: 1fr;
+  }
+}
